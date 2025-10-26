@@ -1,0 +1,103 @@
+.inputs_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: 20px auto;
+}
+.search-container {
+    position: relative;
+    /* Use vw for widths below 1200px if desired, or a simple fixed size */
+    width: 250px; 
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 13px; /* Fixed size is fine for an icon */
+}
+
+.search-input {
+    width: 100%;
+    padding: 15px 12px 15px 38px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+    border-radius: 8px;
+    background: transparent;
+}
+
+.search-input::placeholder {
+    color: #aaa;
+    /* Use a fixed px size for placeholder outside the target range */
+    font-size: 16px; 
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* TARGET RANGE: LOCK THE SIZE FROM 1200px TO 1920px                          */
+/* -------------------------------------------------------------------------- */
+@media (min-width: 1200px) and (max-width: 1920px) {
+    
+    .search-container {
+        /* Lock width to a fixed pixel value (e.g., 345.6px) 
+           This will prevent it from changing size when the viewport 
+           resizes between 1200px and 1920px. */
+        width: 346px; 
+    }
+
+    .search-input::placeholder {
+        /* Lock placeholder font size to a fixed pixel value (e.g., 21px) 
+           This will also prevent it from changing size. */
+        font-size: 21px; 
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/* OPTIONAL: If the viewport gets larger than 1920px, lock the size at 1920px's scale */
+/* -------------------------------------------------------------------------- */
+@media (min-width: 1921px) {
+    .search-container {
+        width: 346px; /* 18vw at 1920px */
+    }
+    .search-input::placeholder {
+        font-size: 21px; /* 1.1vw at 1920px */
+    }
+}
+select{
+    width: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+     padding-inline-end: 20px; 
+}
+
+option {
+  background-color: #fff;
+  color: #333;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+@media (max-width: 550px){
+    .search-container{
+        width: 200px;
+    }
+}
+
+@media (max-width: 460px){
+    .search-container{
+        width: 200px;
+    }
+    .inputs_container{
+        flex-direction: column;
+        gap: 10px;
+    }
+}

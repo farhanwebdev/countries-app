@@ -1,0 +1,37 @@
+nav{
+   
+    padding: 20px 0;
+    background-color: white;
+    box-shadow: 2px 0px 5px #dbdbdb;
+    max-width: 100%;
+    margin: auto;
+}
+
+.inside_nav{
+    max-width: 90%;
+    margin: auto;
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.inside_nav h2{
+    font-size: 1.8vw;
+}
+.darkMode_div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px){
+    .inside_nav h2{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 600px){
+    .inside_nav h2{
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,123 @@
+.inside_country{
+    margin: 50px auto;
+    max-width: 90%;
+}
+.back_btn_container{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    width: 150px;
+    padding: 10px 15px;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.back-btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+.country_info{
+    margin-top: 50px;
+    display: flex;
+   
+    
+}
+
+.details-columns{
+    display: flex;
+}
+
+.country_image img{
+    width: 450px;
+}
+.country_info_details, .country_image{
+    flex: 1;
+}
+
+.country_info_details h1{
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
+
+.details-column-one p, .details-column-two p{
+    margin: 10px 0;
+}
+
+.border-countries-container{
+    margin-top: 0px;
+}
+
+.border_countries_name{
+    margin: 0 5px;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 0 5px #ccc;
+    margin-bottom: 10px;
+    cursor:pointer;
+}
+
+.border-info{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+@media (max-width: 1105px){
+   .country_image img{
+    width: 90%;
+   }
+   .country_info_details h1{
+    margin-top: 0;
+   }
+}
+
+
+@media (max-width: 1105px){
+   .country_info{
+    flex-direction: column;
+    align-items: center;
+   }
+    .country_image img{
+    width: 100%;
+   }
+   .country_info_details{
+    margin-top: 20px;
+    width: 100%;
+   }
+   .details-columns{
+    justify-content: center;
+   }
+   .country_info_details h1{
+    text-align: center;
+   }
+   .border-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .border_countries_name{
+    margin: 0px 5px;
+   }
+}
+
+@media (max-width: 460px){
+  .border-info{
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    padding-left: 0px;
+  }
+  .details-columns{
+    flex-direction: column;
+  }
+}
