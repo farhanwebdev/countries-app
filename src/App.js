@@ -27,7 +27,7 @@ function App() {
   }, [theme])
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Header/>
    <Routes>
     <Route path="/" element={
